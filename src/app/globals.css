@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Light theme default, will be overridden by .dark */
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 240 20% 15%; /* Dark Charcoal for light theme primary */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 140 100% 50%; /* Neon Green for light theme accent */
+    --accent-foreground: 0 0% 7%; /* Dark text on neon green for light theme */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 140 100% 50%; /* Neon Green for light theme ring */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables, can keep defaults or adjust if sidebar is used extensively */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 7%; /* #121212 Deep Black */
+    --foreground: 0 0% 88%; /* #E0E0E0 Light Gray for text */
+    --card: 0 0% 10%; /* #1A1A1A Slightly lighter than background */
+    --card-foreground: 0 0% 88%; /* #E0E0E0 */
+    --popover: 0 0% 10%; /* #1A1A1A */
+    --popover-foreground: 0 0% 88%; /* #E0E0E0 */
+    --primary: 240 20% 15%; /* #1E1E2E Dark Charcoal */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF White */
+    --secondary: 0 0% 17%; /* #2C2C2C Subtle dark gray */
+    --secondary-foreground: 0 0% 88%; /* #E0E0E0 */
+    --muted: 0 0% 15%; /* Slightly darker than secondary */
+    --muted-foreground: 0 0% 60%; /* #999999 Medium Gray for less prominent text */
+    --accent: 140 100% 50%; /* Neon Green for dark theme accent */
+    --accent-foreground: 0 0% 7%; /* Dark text on neon green for dark theme */
+    --destructive: 0 62.8% 30.6%; /* Default dark destructive */
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 17%; /* #2C2C2C */
+    --input: 0 0% 12%; /* #1F1F1F Darker input background */
+    --ring: 140 100% 50%; /* Neon Green for dark theme ring */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Removed font-family: Arial, Helvetica, sans-serif; to allow Geist font from layout.tsx to apply */
+  }
+}
