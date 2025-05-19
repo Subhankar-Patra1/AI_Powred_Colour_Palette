@@ -7,10 +7,8 @@ Welcome to **Colour Palette** – a modern, elegant tool for exploring, creating
 - **Palette Generator:** Instantly generate harmonious color palettes for any project.
 - **Custom Editing:** Fine-tune colors, add or remove swatches, and save your favorites.
 - **Export & Share:** Download palettes or share them with a simple link.
-- **Responsive Design:** Enjoy a seamless experience on any device.```markdown
-
-# 🎨 Colour Palette
-
+- **Responsive Design:** Enjoy a seamless experience on any device.
+- 
 ## 🌟 About the Project
 
 Colour Palette is more than just a tool—it's a creative playground. We believe that colors have the power to inspire, evoke emotions, and transform ideas into reality. With this project, our goal is to provide a seamless, intuitive, and enjoyable experience for anyone looking to explore the world of color.
